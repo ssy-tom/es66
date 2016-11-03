@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串补充</title>
+</head>
+<script src="jquery-2.2.0.min.js"></script>
+<body>
+<input type="text" name="zyy">
+</body>
+<script>
+//    var str="123123";
+//    for(let aa of str){
+//        console.log(aa);
+//    }
+
+//var s = 'Hello world!';
+//s.startsWith('world', 6)
+//s.endsWith('Hello', 5)
+//console.log(s.includes('Hello',0));
+
+//var name = "Bob", time = "today";
+//var rr=`Hello ${name}, how are you ${time}?`;
+//    console.log(rr);
+//    alert`123123`;
+
+//var a = 5;
+//var b = 10;
+//
+//function tag(s, v1, v2) {
+//    console.log(s[0]);
+//    console.log(s[1]);
+//    console.log(s[2]);
+//    console.log(s[3]);
+//    console.log(v1);
+//    console.log(v2);
+//    return "OK";
+//}
+//
+//tag`Hello${a + b}world${a * b}ff${a - b}`;
+
+//var total = 30;
+//var msg = passthru`The total is ${total} (${total*1.05} with tax)`;
+//    function passthru(literals,ee) {
+//        console.log(literals)
+//        console.log(ee)
+//        console.log(arguments)
+//    }
+
+var total = 30;
+var msg = passthru`The total is ${total} (${total*1.05} with tax)`;
+
+function passthru(literals) {
+    var result = '';
+    var i = 0;
+console.log(literals)
+    while (i < literals.length) {
+        result += literals[i++];
+        console.log(i+" "+arguments.length);
+        if (i < arguments.length) {
+            result += arguments[i];
+            console.log(arguments)
+        }
+    }
+
+    return result;
+}
+
+console.log(msg);
+
+
+
+
+
+
+
+
+</script>
+</html>

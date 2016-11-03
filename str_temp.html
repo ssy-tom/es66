@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    //    var template = `
+    //<ul>
+    //  <% for(var i=0; i < data.supplies.length; i++) { %>
+    //    <li><%= data.supplies[i] %></li>
+    //  <% } %>
+    //</ul>
+    //`;
+    //    function compile(template) {
+    //        var evalExpr = /<%=(.+?)%>/g;
+    //        var expr = /<%([\s\S]+?)%>/g;
+    //
+    //        template = template
+    //                .replace(evalExpr, '`); \n  echo( $1 ); \n  echo(`')
+    //                .replace(expr, '`); \n $1 \n  echo(`');
+    //
+    //        template = 'echo(`' + template + '`);';
+    //
+    //        var script =
+    //                `(function parse(data){
+    //    var output = "";
+    //
+    //    function echo(html){
+    //      output += html;
+    //    }
+    //
+    //    ${ template }
+    //
+    //    return output;
+    //  })`;
+    //
+    //        return script;
+    //    }
+    //    var parse = eval(compile(template));
+    //    var tmp = parse({supplies: ["broom", "mop", "cleaner"]});
+    //    console.log(tmp)
+
+
+    //var s = 'Hello world!';
+    //
+    //console.log(s.endsWith('world!'));
+    //s.endsWith('world!');
+    //
+    //s.includes('o');
+
+    //var str='xa'.repeat(2);
+    //console.log(str);
+    //'hello'.repeat(2);
+    //'na'.repeat(0)
+    //'xxx'.padStart(2, 'ab')
+
+    //var str='x'.padStart(5, 'ab');
+    //console.log(str);
+
+    //'x'.padStart(4, 'ab')
+    //
+    //'x'.padEnd(5, 'ab')
+    //'x'.padEnd(4, 'ab')
+    //var basket={
+    //    count:"$1.99"
+    //};
+    //
+    //        var str=`There are <b>${basket.count}</b>`;
+    //
+    //
+    //console.log(str);
+
+    //var x = 1;
+    //var y = 2;
+    //
+    //console.log(`${x} + ${y} = ${x + y}`)
+
+    //var msg = `Hello, ${place}`;
+    //    console.log(msg);
+
+    //const data = [
+    //    { first: '<Jane>', last: 'Bond' },
+    //    { first: 'Lars', last: '<Croft>' },
+    //];
+    //
+    //console.log(tmpl(data));
+
+
+    //let str = 'return ' + '`Hello ${name}!`';
+    //let func = new Function('name', str);
+    //var str1=func('Jack');
+    //    console.log(str1);
+
+
+    //let str = '(name) => `Hello ${name}!`';
+    //console.log(str)
+    //let func = eval(str);
+    //var fuc=func('Jack');
+    //    console.log(fuc)
+
+    //var template = `
+    //<ul>
+    //  <% for(var i=0; i < data.supplies.length; i++) { %>
+    //    <li><%= data.supplies[i] %></li>
+    //  <% } %>
+    //</ul>
+    //`;
+    //
+    //var evalExpr = /<%=(.+?)%>/g;
+    //var expr = /<%([\s\S]+?)%>/g;
+    //
+    //template = template
+    //        .replace(evalExpr, '`); \n  echo( $1 ); \n  echo(`')
+    //        .replace(expr, '`); \n $1 \n  echo(`');
+    //
+    //template = 'echo(`' + template + '`);';
+    //    console.log(template);
+//    var template = `
+//<ul>
+//  <% for(var i=0; i < data.supplies.length; i++) { %>
+//    <li><%= data.supplies[i] %></li>
+//  <% } %>
+//</ul>
+//`;
+
+//    function compile(template){
+//        var evalExpr = /<%=(.+?)%>/g;
+//        var expr = /<%([\s\S]+?)%>/g;
+//
+//        template = template
+//                .replace(evalExpr, '`); \n  echo( $1 ); \n  echo(`')
+//                .replace(expr, '`); \n $1 \n  echo(`');
+//
+//        template = 'echo(`' + template + '`);';
+//
+//        var script =
+//                `(function parse(data){
+//    var output = "";
+//    function echo(html){
+//      output += html;
+//    }
+//
+//    ${ template }
+//
+//    return output;
+//  })`;
+//
+//
+//        return script;
+//    }
+//
+//    var parse = eval(compile(template));
+//    var str= parse({ supplies: [ "broom", "mop", "cleaner" ] });
+//    console.log(str)
+//    function compile(template,data) {
+//        var output = "";
+//        var evalExpr = /<%=(.+?)%>/g;
+//        var expr = /<%([\s\S]+?)%>/g;
+//        template = template
+//                .replace(evalExpr, '`); \n  echo( $1 ); \n  echo(`')
+//                .replace(expr, '`); \n $1 \n  echo(`');
+//
+//        template = 'echo(`' + template + '`);';
+//    function echo(html){
+//      output += html;
+//    }
+//        eval(template);
+//
+//    return output;
+//    }
+//    var str=compile(template,{ supplies: [ "broom", "mop", "cleaner" ] });
+//
+//    console.log(str)
+
+//alert(123)
+
+//
+//    var a = 5;
+//    var b = 10;
+//
+//    tag`Hello ${ a + b } world ${ a * b } www`;
+//
+//    // 等同于
+//
+////    tag(['Hello ', ' world ', ''], 15, 50);
+//function tag(a,b,c) {
+//    console.log(a,b,c)
+//}
+
+//    var total = 30;
+//    var msg = passthru`The total is ${total} (${total*1.05} with tax)`;
+//
+//    function passthru(literals) {
+//        var result = '';
+//        var i = 0;
+//        console.log(literals);
+//      console.log(arguments);
+//
+//        while (i < literals.length) {
+//            result =result+ literals[i];
+//            i++;
+//
+//            if (i < arguments.length) {
+//                result += arguments[i];
+//            }
+//
+//        }
+//
+//        return result;
+//    }
+//
+//    console.log(msg)
+
+
+//    function gg() {
+//
+//        console.log(arguments)
+//    }
+//    gg('a','b')
+
+//    var raw = function (strings, ...values) {
+    //        console.log(values)
+    //    }
+    //
+    //    raw`Hi\u000A!`;
+
+
+    // "Hi\\n"
+
+
+
+    // "Hi\\n"
+
+
+    var raw = function (strings, ...values) {
+        console.log(strings);
+        console.log(values);
+        var output = "";
+        for (var index = 0; index < values.length; index++) {
+            output += strings.raw[index] + values[index];
+        }
+
+        output += strings.raw[index]
+        return output;
+    }
+    console.log(String.raw`Hi\n${2+3}!`);
+
+
+</script>
+</html>
